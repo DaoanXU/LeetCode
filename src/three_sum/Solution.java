@@ -6,6 +6,7 @@ import java.util.Arrays;
 /**
  * This solution is O(N^2)
  * However, it reaches the time limit.
+ * This Time Exceeding May Be related to the AddToList is not efficient enough
  * 
  * @author Daoan XU
  * 
