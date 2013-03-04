@@ -2,11 +2,16 @@ package three_sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * This solution is O(N^2)
- * However, it reaches the time limit.
- * This Time Exceeding May Be related to the AddToList is not efficient enough
+ * Use Set to check weather to add.
+ * So pass the time limit.
+ * 
+ * I thought Key in HashFunction in HashSet is based on reference
+ * Infact it is not. Fatal misunderstanding
  * 
  * @author Daoan XU
  * 
@@ -16,6 +21,8 @@ public class Solution {
 
         Arrays.sort(num);
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+
+        Set set = new HashSet();
 
         for (int i = 0; i < num.length; i++) {
             if (i < 0)
@@ -33,7 +40,8 @@ public class Solution {
                     tmp.add(num[i]);
                     tmp.add(num[left]);
                     tmp.add(num[right]);
-                    addToList(result, tmp);
+                    if(set.add(tmp))
+                        result.add(tmp);
                     right--;
                     left++;
                     continue;
@@ -44,20 +52,20 @@ public class Solution {
         return result;
     }
 
-    void addToList(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> tmp) {
-        int size = result.size();
-        for (int i = 0; i < size; i++)
-            if (isSame(result.get(i), tmp))
-                return;
-        result.add(tmp);
-    }
-
-    <T extends Comparable<T>> boolean isSame(ArrayList<T> a, ArrayList<T> b) {
-        int size = a.size();
-        for (int i = 0; i < size; i++) {
-            if (a.get(i) != b.get(i))
-                return false;
-        }
-        return true;
-    }
+//    void addToList(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> tmp) {
+//        int size = result.size();
+//        for (int i = 0; i < size; i++)
+//            if (isSame(result.get(i), tmp))
+//                return;
+//        result.add(tmp);
+//    }
+//
+//    <T extends Comparable<T>> boolean isSame(ArrayList<T> a, ArrayList<T> b) {
+//        int size = a.size();
+//        for (int i = 0; i < size; i++) {
+//            if (a.get(i) != b.get(i))
+//                return false;
+//        }
+//        return true;
+//    }
 }
