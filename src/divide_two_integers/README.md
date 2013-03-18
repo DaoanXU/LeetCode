@@ -10,6 +10,6 @@ However, after modifying it into non-recurisve verion, i found that the mumber o
 
 The solution scans bit by by bit, so its O(32) = O(1).
 
-One tricy thing used is that we change all numbers to negative. And i use the fact that Integer.MAX_VALUE + 1 = Integer.MIN_VALUE, 
-and 0 - Integer.MIN_VALUE = Integer.MIN_VALUE. From the algorithm point of view, i did not deal with over flow.
-However the 2 facts given above makes the overflow situation "accendtaly" correct.
+One tricky thing used is that we change all numbers to negative. And i use the fact that `Integer.MAX_VALUE + 1 = Integer.MIN_VALUE`,
+and `0 - Integer.MIN_VALUE = Integer.MIN_VALUE`. From the algorithm point of view, i did not deal with over flow.
+However the 2 facts given above makes the overflow situation "accidentaly" correct.
