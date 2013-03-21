@@ -12,7 +12,7 @@ Change the problem into the stock max profit in one day problem, by replace each
 
 For example, given the array `[−2,1,−3,4,−1,2,1,−5,4]`, change it into   
 `[0,−2,-1,−4,0,−1,1,2,-3,1]`  
-So the max profit is `2` - `-4` = 6.
+So the max profit is `2` - `-4` = `6`.
 
 ###Solution 2:
 Combine the array switch step and the later step, in Solution 1, into one loop.   
