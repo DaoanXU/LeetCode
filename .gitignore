@@ -1,8 +1,13 @@
 *.class
-
-# Package Files #
 *.jar
 *.war
 *.ear
+*.iml
 /bin
 /test
+/src/*/.gitignore
+/.idea/
+/.classpath
+/.settings/
+/target
+/.project
