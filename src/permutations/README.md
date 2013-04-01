@@ -1,4 +1,4 @@
-Permutations(http://leetcode.com/onlinejudge#question_46)
+###[Permutations](http://leetcode.com/onlinejudge#question_46)
 
 Given a collection of numbers, return all possible permutations.
 
