@@ -1,12 +1,10 @@
-package permutions;
+package permutations;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.ArrayList;
 
 public class SolutionStackArray {
-
-    int cc = 0;
 
     boolean contains(int[] arr, int x) {
         for (int i : arr)
@@ -31,7 +29,7 @@ public class SolutionStackArray {
     }
 
     public LinkedList<int[]> search(int size) {
-        int timecount = 0;
+
 
         LinkedList<int[]> mappers = new LinkedList<int[]>();
 
@@ -48,7 +46,6 @@ public class SolutionStackArray {
             for (int i : allNums) {
                 if (contains(top, i))
                     continue;
-                cc++;
                 int[] num = Arrays.copyOf(top, top.length + 1);
                 num[num.length - 1] = i;
                 if (compareto(num, poped) > 0) {
@@ -63,7 +60,6 @@ public class SolutionStackArray {
             if (!breakit)
                 poped = s.pop();
         }
-        System.out.println("cc:" + cc);
         return mappers;
     }
 

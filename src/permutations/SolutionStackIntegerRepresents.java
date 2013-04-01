@@ -1,4 +1,4 @@
-package permutions;
+package permutations;
 
 import java.util.Stack;
 
