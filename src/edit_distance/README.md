@@ -1,4 +1,4 @@
-[Edit Distance](http://leetcode.com/onlinejudge#question_72)
+###[Edit Distance](http://leetcode.com/onlinejudge#question_72)
 
 Given two words _word1_ and _word2_, find the minimum number of steps required to convert _word1_ to _word2_. (each operation is counted as 1 step.)
 
