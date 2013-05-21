@@ -1,4 +1,4 @@
-[Question Link](http://leetcode.com/onlinejudge#question_28)
+###[Implement strStr()](http://leetcode.com/onlinejudge#question_28)
 
 Implement strStr().
 
