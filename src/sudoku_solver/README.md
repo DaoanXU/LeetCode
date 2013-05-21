@@ -14,3 +14,8 @@ A sudoku puzzle...
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png)
 
 ...and its solution numbers marked in red.
+
+-
+
+SolutionRecursive is a Brutal Force Recursive Solution
+SolutionDFS is a Brutal Force None-Recursive Solution

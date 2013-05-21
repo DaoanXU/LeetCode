@@ -1,6 +1,6 @@
 package sudoku_solver;
 
-public class Solution {
+public class SolutionRecursive {
     private boolean isValidBox(char[][] board, int row, int column) {
         if(board[row][column] == '.')
             return true;
