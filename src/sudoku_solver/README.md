@@ -17,5 +17,5 @@ A sudoku puzzle...
 
 -
 
-SolutionRecursive is a Brutal Force Recursive Solution
+SolutionRecursive is a Brutal Force Recursive Solution  
 SolutionDFS is a Brutal Force None-Recursive Solution
