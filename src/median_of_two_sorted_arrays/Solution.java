@@ -2,11 +2,6 @@ package median_of_two_sorted_arrays;
 
 import java.util.Arrays;
 
-/**
- * 
- * @author Daoan XU
- */
-
 public class Solution {
 
     public double findMedianSortedArrays(int A[], int B[]) {
@@ -23,11 +18,11 @@ public class Solution {
     double findMedian(int A[], int aStart, int aEnd) {
         if (isEven(aEnd - aStart))
             return A[(aStart + aEnd) >>> 1];
-        return ((double) A[(aStart + aEnd) >>> 1] + (double) A[(aStart + aEnd >>> 1) + 1]) / 2.0;
+        return ((double) A[(aStart + aEnd) >>> 1] + 
+                (double) A[(aStart + aEnd >>> 1) + 1]) / 2.0;
     }
 
-    double findMedianCombine(int A[], int aStart, int aEnd, int B[],
-            int bStart, int bEnd) {
+    double findMedianCombine(int A[], int aStart, int aEnd, int B[], int bStart, int bEnd) {
 
         int[] arr = new int[bEnd + aEnd - aStart - bStart + 2];
         int i = 0;
@@ -58,8 +53,7 @@ public class Solution {
         return findMedian(arr, 0, arr.length - 1);
     }
 
-    double findMedian(int A[], int aStart, int aEnd, int B[], int bStart,
-            int bEnd) {
+    double findMedian(int A[], int aStart, int aEnd, int B[], int bStart, int bEnd) {
 
         int allSize = A.length + B.length;
         int aHalf = aStart + aEnd >>> 1;
@@ -70,19 +64,21 @@ public class Solution {
 
         if (aEnd == aStart)
             return findMedianCombine(A, aStart, aEnd, B, bStart, bEnd);
-        // When the size of A is cut to 1, should be able to find the median in
-        // constant time
+        // When the size of A is cut to 1,
+        // should be able to find the median in constant time
 
         if (aEnd == aStart + 1)
             return findMedianCombine(A, aStart, aEnd, B, bStart, bEnd);
-        // When the size of A is cut to 2, should be able to find the median in
-        // constant time
+        // When the size of A is cut to 2,
+        // should be able to find the median in constant time
 
         if (isEven(allSize))
             if (A[aHalf] >= B[bCheck] && A[aHalf] <= B[bCheck + 1])
-                return ((double) Math.min(A[aHalf + 1], B[bCheck + 1]) + (double) A[aHalf]) / 2.0;
+                return ((double) Math.min(A[aHalf + 1], 
+                        B[bCheck + 1]) + (double) A[aHalf]) / 2.0;
             else if (A[aHalf] >= B[bCheck + 1] && A[aHalf] <= B[bCheck + 2])
-                return ((double) Math.max(A[aHalf - 1], B[bCheck + 1]) + (double) A[aHalf]) / 2.0;
+                return ((double) Math.max(A[aHalf - 1], 
+                        B[bCheck + 1]) + (double) A[aHalf]) / 2.0;
         if (A[aHalf] >= B[bCheck] && A[aHalf] <= B[bCheck + 1])
             return (double) A[aHalf];
 
