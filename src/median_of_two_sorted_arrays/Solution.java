@@ -2,11 +2,6 @@ package median_of_two_sorted_arrays;
 
 import java.util.Arrays;
 
-/**
- * 
- * @author Daoan XU
- */
-
 public class Solution {
 
     public double findMedianSortedArrays(int A[], int B[]) {

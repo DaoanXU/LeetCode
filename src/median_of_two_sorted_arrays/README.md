@@ -1,10 +1,10 @@
-[Question Link](http://leetcode.com/onlinejudge#question_4)
+###[Median of Two Sorted Arrays](http://leetcode.com/onlinejudge#question_4)
 
 There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 
 -
 
-###Solution 1
+**Solution 1**
 
 This is the solution I come up with. The idea is as following:   
 
@@ -22,7 +22,7 @@ The solution passes the online test.
 
 And the time complexity should be O(log(min(m,n)))
 
-###Solution 2
+**Solution 2**
 
 The idea is that we can check an element in A or B is smaller , greater or equal to the median.
 So we can seek for the number we need in A in log(n) time, and in B in log(m) time.
