@@ -1,4 +1,4 @@
-[Question Link](http://leetcode.com/onlinejudge#question_26)
+###[Remove Duplicates from Sorted Array](http://leetcode.com/onlinejudge#question_26)
 
 Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
 
