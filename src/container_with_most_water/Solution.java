@@ -1,7 +1,6 @@
 package container_with_most_water;
 
 public class Solution {
-
     public int maxArea(int[] height) {
         return maxArea2(height, 0, height.length - 1, 0);
     }
