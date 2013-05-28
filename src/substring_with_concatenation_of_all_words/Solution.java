@@ -5,8 +5,6 @@ import java.util.HashMap;
 
 public class Solution {
     public ArrayList<Integer> findSubstring(String S, String[] L) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
 
         if (L.length == 0) {
             return null;
