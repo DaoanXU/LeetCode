@@ -8,6 +8,6 @@ Note: You may not slant the container.
 
 This Solution Contains 2 Solutions.
 
-maxArea is the first idea i come up with, which is recursive solution. It is correct but it reaches the time limit of online test.
+maxArea is the first idea i come up with, which is recursive solution. It is correct but it reaches the space limit of online test. Recurisve solution may cause stack over flow.
 
-maxAres2 is the O(n) solution which scan from two ends. IT passes the one line test
+maxAres2 is the O(n) solution which scan from two ends. IT passes the online test
