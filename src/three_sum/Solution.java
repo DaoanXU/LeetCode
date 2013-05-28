@@ -5,17 +5,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * This solution is O(N^2)
- * Use Set to check weather to add.
- * So pass the time limit.
- * 
- * I thought Key in HashFunction in HashSet is based on reference
- * Infact it is not. Fatal misunderstanding
- * 
- * @author Daoan XU
- * 
- */
 public class Solution {
     public ArrayList<ArrayList<Integer>> threeSum(int[] num) {
 
@@ -52,20 +41,4 @@ public class Solution {
         return result;
     }
 
-//    void addToList(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> tmp) {
-//        int size = result.size();
-//        for (int i = 0; i < size; i++)
-//            if (isSame(result.get(i), tmp))
-//                return;
-//        result.add(tmp);
-//    }
-//
-//    <T extends Comparable<T>> boolean isSame(ArrayList<T> a, ArrayList<T> b) {
-//        int size = a.size();
-//        for (int i = 0; i < size; i++) {
-//            if (a.get(i) != b.get(i))
-//                return false;
-//        }
-//        return true;
-//    }
 }
