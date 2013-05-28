@@ -3,11 +3,6 @@ package three_sum_closest;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * 
- * @author Daoan XU
- * 
- */
 public class Solution {
     public int threeSumClosest(int[] num, int target) {
         int maxDiff = Integer.MAX_VALUE;
