@@ -12,15 +12,13 @@ public class Solution {
         int limit = Integer.MAX_VALUE / 10;
         int limitDigit = Integer.MAX_VALUE % 10;
         int start = 0;
-        
+
         limitDigit = Integer.MAX_VALUE % 10;
 
         while (str.charAt(start) == ' ' && start < size)
             start++;
-        if(start == size)
+        if (start == size)
             return 0;
-        
-        
 
         char firstDigit = str.charAt(start);
         if (firstDigit == '-') {
@@ -43,7 +41,7 @@ public class Solution {
             if (result > limit)
                 return negative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
             if (result == limit && digit > limitDigit)
-                return 0;
+                return negative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
             result = result * 10 + digit;
         }
 
