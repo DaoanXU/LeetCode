@@ -7,25 +7,17 @@ public class Solution {
 
         if (strs.length == 1)
             return strs[0];
+        
+        for (int j = 0; j < strs.length; j++) 
+            if(strs[j].length() == 0)
+                return "";
 
-        int i = 0;
-        try {
-            while (true) {
-                char thisone = strs[0].charAt(i);
-                boolean breakit = false;
-                for (int j = 1; j < strs.length; j++) {
-                    if (strs[j].charAt(i) != thisone) {
-                        breakit = true;
-                        break;
-                    }
-                }
-                if (breakit)
-                    break;
-                i++;
+        for (int i = 0; i < strs[0].length(); i++) {
+            for (int j = 1; j < strs.length; j++) {
+                if (strs[j].length() <= i || strs[j].charAt(i) != strs[0].charAt(i))
+                    return strs[0].substring(0, i);
             }
-        } catch (IndexOutOfBoundsException e) {
-
         }
-        return strs[0].substring(0, i);
+        return strs[0];
     }
 }
