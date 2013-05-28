@@ -4,8 +4,6 @@ import java.util.Arrays;
 
 public class Solution {
     public void nextPermutation(int[] num) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         int last = num.length - 1;
         
         for(int i = last; i > 0 ; i --){

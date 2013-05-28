@@ -1,6 +1,4 @@
-[Question Link](http://leetcode.com/onlinejudge#question_31)
-
-###Next PermutationFeb
+###[Next PermutationFeb](http://leetcode.com/onlinejudge#question_31)
 
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 
