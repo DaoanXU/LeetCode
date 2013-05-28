@@ -2,17 +2,9 @@ package merge_k_sorted_lists;
 
 import java.util.ArrayList;
 
-/**
- * For easy coding, using recursive for merge.
- * @author Daoan XU
- *
- */
-
 public class Solution {    
 
     public ListNode mergeKLists(ArrayList<ListNode> lists) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         if(lists.size() == 0)
             return null;
         
