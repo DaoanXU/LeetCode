@@ -1,10 +1,5 @@
 package divide_two_integers;
 
-/**
- * Divide two integers without using multiplication, division and mod operator.
- * 
- * @author Daoan XU
- */
 public class Solution2 {
 
     public int divide(int dividend, int divisor) {
