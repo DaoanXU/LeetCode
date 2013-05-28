@@ -2,8 +2,6 @@ package implement_strStr;
 
 public class Solution {
     public String strStr(String haystack, String needle) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         int head = 0;
         int pHaystack = 0;
         int pNeedle = 0;
