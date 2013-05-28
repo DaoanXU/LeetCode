@@ -1,6 +1,4 @@
-Search in Rotated Sorted Array
-
-[Question Link](http://leetcode.com/onlinejudge#question_33)
+###[Search in Rotated Sorted Array](http://leetcode.com/onlinejudge#question_33)
 
 Suppose a sorted array is rotated at some pivot unknown to you beforehand.
 
@@ -9,3 +7,7 @@ Suppose a sorted array is rotated at some pivot unknown to you beforehand.
 You are given a target value to search. If found in the array return its index, otherwise return -1.
 
 You may assume no duplicate exists in the array.
+
+-
+
+Binary search solution.
