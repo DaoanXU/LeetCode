@@ -17,3 +17,9 @@ These are non-recurisve solutions
 
 This solution swaps the numbers in array in each recursion level.  
 It only swaps so it is much faster.
+
+###SolutionRecursive.java
+
+This solution is simple recursive solution.  
+It avoids array copy so its quite fast.
+
