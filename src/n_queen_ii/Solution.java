@@ -1,4 +1,4 @@
-package n_queen;
+package n_queen_ii;
 
 public class Solution {
     int n;
