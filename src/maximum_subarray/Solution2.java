@@ -12,9 +12,6 @@ public class Solution2 {
             if (sum < 0)
                 sum = 0;
         }
-
         return max;
-
     }
-
 }
