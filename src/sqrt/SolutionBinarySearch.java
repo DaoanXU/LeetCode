@@ -1,6 +1,6 @@
 package sqrt;
 
-public class Solution {
+public class SolutionBinarySearch {
     public int sqrt(int x) {
 
         int start = 0;
