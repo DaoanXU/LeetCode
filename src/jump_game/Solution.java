@@ -10,7 +10,7 @@ public class Solution {
         int currentMax = 0;
         for (int i = 0; i < A.length; i++) {
             if (minJump[i] == Integer.MAX_VALUE)
-                continue;
+                break;
 
             for (int j = currentMax + 1; j <= i + A[i]; j++) {
                 if (j > A.length - 1)
