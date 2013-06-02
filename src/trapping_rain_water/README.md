@@ -11,4 +11,8 @@ The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In th
 
 -
 
-My Solution Count Row By Row From the bottom
+**SolutionRowByRow**   
+Count Row By Row From the bottom. The time complexity is: let there are k different height, the complexity is O(kn)
+
+**Solution**  
+calculates the height of water at each column. The time complexity is O(n)

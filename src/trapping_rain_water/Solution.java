@@ -1,37 +1,21 @@
 package trapping_rain_water;
 
 public class Solution {
-
     public int trap(int[] A) {
-        int result = 0;
-        int bot = 0;
-        int max = 0;
-        for (int i = 0; i < A.length; i++) {
-            if (A[i] > max)
-                max = A[i];
+        if (A.length < 3)
+            return 0;
+
+        int[] leftMax = new int[A.length];
+        for (int i = 1; i < A.length; i++) {
+            leftMax[i] = Math.max(leftMax[i - 1], A[i - 1]);
         }
 
-        while (max > bot) {
-            //Count row by row from the bottom
-            int first = -1;
-            int last = 0;
-            int count = 0;
-            int min = Integer.MAX_VALUE;
-            for (int i = 0; i < A.length; i++) {
-                if (A[i] > bot) {
-                    last = i;
-                    count++;
-                    if (first == -1)
-                        first = i;
-                    if (min > A[i])
-                        min = A[i];
-                }
-            }
-            result += (min - bot) * (last - first + 1 - count);
-            bot = min;
+        int rightMax = 0;
+        int count = 0;
+        for (int i = A.length - 2; i > 0; i--) {
+            rightMax = Math.max(rightMax, A[i + 1]);
+            count = count + Math.max(Math.min(rightMax, leftMax[i]) - A[i], 0);
         }
-
-        return result;
+        return count;
     }
-    
 }
